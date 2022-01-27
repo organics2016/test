@@ -1,18 +1,16 @@
 package ink.organics.test.testdata;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import ink.organics.test.testdata.java.StaticFieldPOJO;
+import ink.organics.test.testdata.java.RecordTestPOJO;
 
 public class TestStart {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
 
-    public static void main(String[] args) throws JsonProcessingException {
-        StaticFieldPOJO staticFieldPOJO = new StaticFieldPOJO();
+    public static void main(String[] args) {
+        RecordTestPOJO re = new RecordTestPOJO(1,2);
 
-        String json = objectMapper.writeValueAsString(staticFieldPOJO);
-        System.out.println(json);
+        System.out.println(re);
     }
 }
