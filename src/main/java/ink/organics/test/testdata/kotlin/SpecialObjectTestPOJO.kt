@@ -1,4 +1,4 @@
-package testdata.kotlin
+package ink.organics.test.testdata.kotlin
 
 import java.math.BigDecimal
 import java.time.*
@@ -27,4 +27,7 @@ class SpecialObjectTestPOJO {
     private val localTime = LocalTime.now()
     private val zonedDateTime = ZonedDateTime.now()
     private val yearMonth = YearMonth.now()
+
+    //-----
+    private val uuid: UUID = UUID.randomUUID()
 }

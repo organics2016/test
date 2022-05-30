@@ -1,4 +1,4 @@
-package testdata.kotlin
+package ink.organics.test.testdata.kotlin
 
 class JsonIgnorePropertiesTestPOJO {
     private val username: String? = null
@@ -6,7 +6,7 @@ class JsonIgnorePropertiesTestPOJO {
     @com.fasterxml.jackson.annotation.JsonIgnoreProperties("users", "aaa", "bbb")
     private val roles: List<Role>? = null
 
-    object Role {
+    class Role {
         private val roleName: String? = null
         private val users: List<JsonIgnorePropertiesTestPOJO>? = null
     }

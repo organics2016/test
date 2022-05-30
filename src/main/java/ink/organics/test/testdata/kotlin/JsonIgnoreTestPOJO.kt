@@ -1,4 +1,4 @@
-package testdata.kotlin
+package ink.organics.test.testdata.kotlin
 
 class JsonIgnoreTestPOJO {
     @com.fasterxml.jackson.annotation.JsonIgnore

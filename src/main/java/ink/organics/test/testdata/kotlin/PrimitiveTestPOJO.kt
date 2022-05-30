@@ -1,4 +1,4 @@
-package testdata.kotlin
+package ink.organics.test.testdata.kotlin
 
 class PrimitiveTestPOJO {
     private val aByte: Byte = 0

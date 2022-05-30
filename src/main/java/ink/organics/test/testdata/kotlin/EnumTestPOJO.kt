@@ -1,4 +1,4 @@
-package testdata.kotlin
+package ink.organics.test.testdata.kotlin
 
 class EnumTestPOJO {
     private val type = Type.TYPE_A
